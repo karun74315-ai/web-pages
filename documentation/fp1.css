@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    font-weight: 300;
+}
+
+
+a{
+    text-decoration: none;
+}
+ body{
+    display: flex;
+
+ }
+
+ header{
+    border: 1px solid grey;
+    height: 100vh;
+ }
+
+ nav h1{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px;
+    border: 1px solid grey;
+ }
+
+ nav ul{
+    list-style: none;
+
+ }
+
+ nav ul li{
+    border: 1px solid grey;
+    padding: 10px;
+    color: black;
+ }
+
+ nav ul li:hover{
+    background-color: rgba(128, 128, 128, 0.748);
+    transition: .3s ease-in-out;
+ }
+ 
+
+ main{
+    
+    padding: 50px;
+    max-width: 1200px;
+
+ }
+
+ section{
+    margin-bottom: 5px;
+    margin-top: 30px;
+ }
+
+ section article{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column; 
+    gap: 50px;
+
+ }
+
+ section article ul{
+    margin-left: 60px;
+ }
+
+ section article ul li{
+    margin-bottom: 10px;
+ }
+
+ section h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+ }
+
+ code{
+      white-space: pre-line;
+
+      line-height: 2;
+      background-color: rgba(95, 158, 160, 0.527);
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+ }
+ 
+
+ @media (max-width: 480px) {
+    body{
+        flex-direction: column;
+    }
+    heder{
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+ }
